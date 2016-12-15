@@ -17,5 +17,5 @@ echo "# Starting screen..."
 screen -Smd docker -m java $JVM_OPTS -jar minecraft_server.jar
 
 # keep in foreground.
-echo "# Getting log..."
-tail -f /data/logs/latest.log
+echo "Done!"
+exec tail -f /dev/null
